@@ -5,12 +5,13 @@
 - 線上使用：<https://occu-patient.github.io/occu.flow/>
 - GitHub：[occu-patient/occu.flow](https://github.com/occu-patient/occu.flow)
 - 資料預設只存在你的瀏覽器，不會上傳到設計者的伺服器；可自行選擇用 Google 帳號雲端同步
-- [隱私權政策](https://occu-patient.github.io/occu.flow/privacy.html)
+- [隱私權政策](https://occu-patient.github.io/occu.flow/privacy.html)｜[使用條款](https://occu-patient.github.io/occu.flow/terms.html)
 
 ## 更新歷程
 
 | 版本 | 日期 | 內容 |
 | --- | --- | --- |
+| v1.0.1 | 2026/10/18 | 新增使用條款與隱私權政策獨立頁面 |
 | v1.0.0 | 2026/10/18 | 初版上線 |
 
 ## 版權聲明
