@@ -1,0 +1,30 @@
+Copyright (c) 2026 occu.patient (Gwen). All rights reserved.
+著作權所有 © 2026 occu.patient (Gwen)，保留一切權利。
+
+本專案「班好喬 occu.flow」之名稱、標誌、程式碼、排班規則與演算法、介面設計及說明文字，
+受中華民國著作權法及相關國際公約保護。
+
+【使用授權】
+任何人可透過作者公布的官方網址，免費將本工具用於個人或所屬機構的工作排班。
+此為非專屬、不可轉讓的使用授權，不包含原始碼的任何權利。
+
+【未經作者事前書面同意，禁止下列行為】
+1. 下載、複製本專案後重新發布，或架設於其他網站、散布副本；
+2. 修改、改作、拆解、還原本專案的程式碼、演算法與規則；
+3. 轉售、出租、收費提供，或包裝成自己的產品或服務；
+4. 移除或修改著作權標示與浮水印；
+5. 以自動化程式大量存取、擷取內容。
+
+【免責聲明】
+本工具產生之內容僅供參考，不構成專業評估或決策依據。使用者因使用本工具所衍生之任何
+結果，本站不負擔相關法律責任。
+
+本專案依「現況」提供，不附任何明示或默示之擔保。在法律允許範圍內，作者不就因使用
+或無法使用本專案所生之損失負責。
+
+合作、客製或商業授權洽詢：occu.patient@gmail.com
+
+---------------------------------------------------------------------------------------
+Unauthorized copying, modification, redistribution, resale or reverse engineering of this
+software is prohibited without prior written permission from the copyright holder.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
