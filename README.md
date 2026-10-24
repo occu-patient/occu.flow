@@ -5,12 +5,14 @@
 - 線上使用：<https://occu-patient.github.io/occu.flow/>
 - GitHub：[occu-patient/occu.flow](https://github.com/occu-patient/occu.flow)
 - 資料預設只存在你的瀏覽器，不會上傳到設計者的伺服器；可自行選擇用 Google 帳號雲端同步
-- [隱私權政策](https://occu-patient.github.io/occu.flow/privacy.html)
+- [使用條款](https://occu-patient.github.io/occu.flow/terms.html)｜[隱私權政策](https://occu-patient.github.io/occu.flow/privacy.html)
+- 排好班表後，可在行事曆拖曳卡片微調並定案；各頁標題旁的「教學」提供影片與圖文說明
 
 ## 更新歷程
 
 | 版本 | 日期 | 內容 |
 | --- | --- | --- |
+| v1.0.3 | 2026/10/25 | 排班結果可手動調整班表並定案；各頁標題旁新增教學（影片＋圖文）；修正服務單位「限定星期」勾選無反應 |
 | v1.0.2 | 2026/10/20 | 卡片可收合／展開；服務單位、本月任務新增清除與勾選刪除；鎖定日期的場次放寬部分排班限制 |
 | v1.0.1 | 2026/10/18 | 調整選單順序與名稱、新增瀏覽人數 |
 | v1.0.0 | 2026/10/18 | 初版上線 |
@@ -24,6 +26,6 @@
 
 ## 免責聲明
 
-本工具產生之內容僅供參考，不構成專業評估或決策依據。使用者因使用本工具所衍生之任何結果，本站不負擔相關法律責任。
+本工具產生之內容僅供參考，不構成專業評估或決策依據。使用者因使用本工具所衍生之任何結果，本站不負擔相關法律責任。手動調整後的班表由使用者自行負責；法規與數字請以主管機關最新公告為準。請勿在工具內輸入勞工的個人或健康資料。
 
 合作或授權洽詢：occu.patient@gmail.com ｜ IG：[@occu.patient](https://instagram.com/occu.patient)

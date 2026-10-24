@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>教學｜班好喬 occu.flow</title>
+<style>
+:root{--bg:#f6f6f3;--cd:#fff;--tx:#1f2430;--mu:#6b7080;--bd:#e6e5df;--ac:#35629f;--ac2:#26324a;--hl:#f0f4fa}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.7 system-ui,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}
+.w{max-width:860px;margin:0 auto;padding:14px 16px 28px}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.hd b{font-size:17px}.hd b em{font-style:normal;color:var(--ac)}
+.hd button{font:inherit;border:1px solid var(--bd);background:#fff;border-radius:10px;padding:6px 14px;cursor:pointer}
+.nav{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 14px}
+.nav a{border:1px solid var(--bd);background:#fff;color:var(--mu);border-radius:99px;padding:4px 13px;font-size:13.5px;text-decoration:none}
+.nav a.on{background:var(--ac2);border-color:var(--ac2);color:#fff}
+h1{font-size:21px;margin:4px 0 2px}h1 span{margin-right:6px}
+.sum{color:var(--mu);margin:0 0 14px}
+.cd{background:var(--cd);border:1px solid var(--bd);border-radius:16px;padding:14px 16px;margin-bottom:14px}
+.cd h2{font-size:16px;margin:0 0 8px}
+.vd{position:relative;padding-top:56.25%;border-radius:12px;overflow:hidden;background:#000}
+.vd iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+video{width:100%;border-radius:12px;background:#000}
+.nov{background:var(--hl);border:1px dashed #a9bfe0;border-radius:12px;padding:22px 14px;text-align:center;color:var(--mu)}
+.vl{margin:8px 0 0;font-size:13px}.vl a,.cd a{color:var(--ac)}
+ol.st{list-style:none;counter-reset:s;margin:0;padding:0}
+ol.st>li{counter-increment:s;position:relative;padding:2px 0 14px 40px}
+ol.st>li::before{content:counter(s);position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;background:var(--ac2);color:#fff;font-weight:700;font-size:14px;display:grid;place-items:center}
+ol.st b{display:block;font-size:15px}.st p{margin:2px 0 0;color:#3b4252;font-size:14.5px}
+.st img{display:block;max-width:100%;margin-top:8px;border:1px solid var(--bd);border-radius:10px}
+ul.tp{margin:0;padding-left:20px;font-size:14.5px;color:#3b4252}ul.tp li{margin:4px 0}
+.go{display:inline-block;margin-top:2px;border:1px solid var(--bd);background:#fff;border-radius:10px;padding:6px 14px;color:var(--ac2);text-decoration:none;font-size:14px}
+.ft{max-width:860px;margin:0 auto;padding:6px 16px 26px;text-align:center;color:var(--mu);font-size:12px;line-height:1.8}
+@media print{.hd button,.nav{display:none}}
+</style></head><body>
+<div class="w">
+<div class="hd"><b>班好喬 <em>occu.flow</em>｜操作教學</b><button type="button" onclick="window.close()">關閉視窗</button></div>
+<nav class="nav" id="nav" aria-label="教學頁面"></nav>
+<main id="m"></main>
+</div>
+<div class="ft">© 2026 occu.patient (Gwen) / 班好喬 occu.flow. All Rights Reserved.<br>本教學為操作說明，法規與數字請以主管機關最新公告為準。<br>教學影片由 YouTube 提供，播放時 YouTube 可能取得你的連線資訊。詳見<a href="privacy.html">隱私權政策</a>。</div>
+<script>
+/* ============================================================
+   教學影片設定：把各頁的 YouTube 網址貼在引號裡（留空＝顯示「影片製作中」）
+   支援：https://youtu.be/xxxxxxxxxxx 、https://www.youtube.com/watch?v=xxxxxxxxxxx 、
+        https://www.youtube.com/shorts/xxxxxxxxxxx，或直接貼 11 碼影片代碼；也可貼 .mp4 網址
+   圖文說明的圖片：選填。把截圖放進網站的 tutorial 資料夾，檔名「頁面代碼-步驟編號.png」，
+   例如 tutorial/cfg-1.png（出勤設定第 1 步）。沒有檔案就自動不顯示。
+   ============================================================ */
+var VIDEOS={help:"",sites:"",cfg:"",trav:"",tasks:"",res:"",cloud:"",log:"",me:""};
+
+var PAGES=[
+{k:"help",ic:"📖",n:"使用說明",sum:"第一次使用，先看這一頁：了解整個流程與系統一定會遵守的規則。",
+ steps:[
+ ["照順序完成 5 個設定","左側選單依序是：服務單位 → 出勤設定 → 交通時間 → 本月任務 → 排班結果。每一步填好再往下，最後按「開始排班」。"],
+ ["看懂「一定會遵守的規則」","系統不排週末、國定假日與你的休假日；同公司預設每週最多 1 次、間隔至少 5 天；單日服務不超過 8 小時、同公司單日不超過 4 小時；午休不排服務、兩地之間會留車程與緩衝。"],
+ ["遇到排不進去","到「排班結果」看「未能排入」卡片，會列出原因。常見做法：增加每月出勤天數上限、補醫師時段、放寬服務單位的限制，或移到下個月。"],
+ ["排好後想微調","到「排班結果」的行事曆按「✏️ 調整班表」，可以拖曳卡片換日期，改好按「確定定案」。"],
+ ["換裝置前先備份","資料預設只存在這個瀏覽器。換手機或電腦前，到「雲端與備份」下載備份檔，或用 Google 登入同步。"]
+ ],
+ tips:["左側選單可按 📌 釘選；手機版按左上角 ☰ 開啟。","頁面標題旁的「？教學」隨時可以再開這份說明。"]},
+
+{k:"sites",ic:"🏢",n:"服務單位",sum:"建立你要服務的公司與廠別，並設定每月要去幾場、每場幾小時。",
+ steps:[
+ ["新增服務單位","按「＋手動新增」，填公司名稱（例：A公司）、廠別（選填，例：一廠）與完整地址。地址一定要含縣市與區，系統才能估算車程。第一張 A公司-一廠 是範例，請改成你的資料或刪除。"],
+ ["設定每月場次","在「每月場次」按「＋ 加一次」選 1H～4H 加入，不要的場次按 ✕ 移除。例如每月 4 小時加 2 小時，就加入 4H 與 2H 各一次。"],
+ ["有申請補助就勾選","勾選「申請補助（4H自動分上下午）」後，4H 場次會自動拆成上午 2H＋下午 2H。"],
+ ["需要時設定進階限制","展開「進階限制」，可設定最早開始時間、僅上午／僅下午、上半月／下半月偏好，以及限定星期。"],
+ ["一次匯入多家","用「⬇️ 下載匯入範本」填好 Excel，再按「📥 從 Excel 匯入」。名稱相同的服務單位會更新，不會重複新增。"],
+ ["批次整理","按「全部展開／全部收合」看清單；「☑ 勾選刪除」可一次刪多個；「🧹 一鍵清除」會清空全部服務單位與本月任務，按之前建議先備份。"]
+ ],
+ tips:["公司名稱相同、廠別不同的服務單位，會被視為「同一家公司」，一起套用同公司的服務頻率限制。","刪除服務單位時，它在「本月任務」的場次也會一起移除。"]},
+
+{k:"cfg",ic:"⚙️",n:"出勤設定",sum:"設定年月、住家地址、上下班時間，以及你不能排班、醫師可配合的時間。",
+ steps:[
+ ["① 基本資料","選擇要排班的年、月與每月最多出勤天數，並填住家地址（需含縣市與區）。填好後會出現 📍 地區與 Google 地圖連結，可以點開確認地址正確。"],
+ ["進階：上下班、午休與緩衝","展開後可調整上班／下班、午休開始／結束，以及單日服務時數（含所有車程）、轉場緩衝（分鐘）。所有時間都是 24 小時制。"],
+ ["② 同一公司服務頻率","「每週最多排 1 次」「兩次之間至少間隔 5 天」預設勾選；取消勾選就不套用。"],
+ ["③ 不想排班的時間","勾選固定不排的星期；在月曆點日期（可複選）、選全天／上午／下午／指定時段，按加入，就是個人休假日。"],
+ ["④ 醫師可配合時段","在月曆點日期、選時段與公司，按加入。需要醫師的場次只會排在醫師有空的時段內。"],
+ ["⑤ 國定假日","系統已內建公告的假日；臨時放假（例如颱風假）請在下方月曆點選新增。"]
+ ],
+ tips:["日期類設定依月份區分，換月份不會誤套用到其他月。","在「本月任務」鎖定日期的場次，不受上下班、午休、轉場與單日時數限制。"]},
+
+{k:"trav",ic:"🚗",n:"交通時間",sum:"勾選常用交通工具，系統會用地區距離估算每段車程。",
+ steps:[
+ ["勾選常用交通方式","汽車、機車、捷運、台鐵／高鐵、公車可複選，系統會挑最快的方式估算。"],
+ ["確認地址可辨識","若出現紅字「請先到出勤設定填住家地址」或「無法辨識區域」，請回去補上縣市與區。"],
+ ["查看／修正各段車程","展開「各段車程」，可以看到各路線的估算分鐘；點 🗺️ 用 Google 地圖查實際時間，再填入「修正(分)」，之後排班就會用你填的數字。"]
+ ],
+ tips:["車程是估算值，同一個地址（同一廠）之間視為 0 分鐘。","修正的數字會跟著資料存檔與備份。"]},
+
+{k:"tasks",ic:"📝",n:"本月任務",sum:"這個月實際要去的場次。可以一鍵帶入，也可以逐筆調整。",
+ steps:[
+ ["⚡ 一鍵產生任務","按下後會依各服務單位的「每月場次」產生本月任務。若這個月某場不去，取消勾選即可。"],
+ ["展開各服務單位","每個服務單位是一組，按名稱展開；「＋ 加一筆」可臨時加場次（例如事業單位臨時加辦活動）。"],
+ ["調整每筆任務","可改時數（1H～4H）、勾選「補助」、勾選「🩺 需醫師」並選醫師同行時數（全程或 1–4H），補助加醫師時可選「兩場都要醫師」或「只要一場有醫師」。"],
+ ["📌 鎖定日期","在任務右側選日期（可再選時間），系統就會固定排在那天。鎖定的場次會放寬上下班、午休、轉場與同公司頻率等限制。"],
+ ["清除任務","「🧹 一鍵清除任務」只清任務，服務單位不受影響，可再按一鍵產生重新帶入。"]
+ ],
+ tips:["同公司單日最多 4 小時的法規上限，鎖定也不會放寬。","沒有服務單位時，請先到「服務單位」新增。"]},
+
+{k:"res",ic:"📅",n:"排班結果",sum:"按下「開始排班」產生班表，檢查結果，必要時手動調整並定案。",
+ steps:[
+ ["🚀 開始排班","確認前面設定都填好，按「開始排班」。系統會試上千種組合，挑出出勤天數最少、車程最短的班表。要先展開「產生班表」卡片才看得到按鈕。"],
+ ["看排班摘要","摘要會顯示場次、出勤天數、醫師同行與估算車程，並提醒有沒有排不進去的場次、規則驗算是否全部通過。"],
+ ["✏️ 調整班表（拖曳換日期）","在「行事曆」卡片按「✏️ 調整班表」，用滑鼠拖曳班表卡片到想要的日期。手機或不方便拖曳時：先點卡片、再點要移到的日期。"],
+ ["改日期或時間","點選卡片後按「✏️ 改日期／時間」，可直接選日期與開始時間（24 小時制，服務時數不變）。補助 4H 是上午＋下午一組，只能整組換日期。"],
+ ["看提醒、復原","每次移動，行事曆上方都會告訴你有沒有違反規則（例如同公司頻率、車程不足、非上班日）。不滿意就按「↩ 復原」；「↺ 還原原始結果」會回到電腦原本排的班表。"],
+ ["✅ 確定定案","改好按「確定定案」。若還有未通過的規則，會先列出來讓你確認。定案後，班表清單、純文字班表、每日路線與匯出行事曆都會用這份班表。"],
+ ["匯出","按「📥 匯出到手機行事曆 (.ics)」或「📅 寫入 Google 行事曆」；「純文字班表」可複製給廠商。"],
+ ["❓ 為什麼沒排在某天？","選一筆任務與日期按「查原因」，系統會說明是被哪條規則擋住，或是目標認為別天更好。"]
+ ],
+ tips:["手動調整由你決定，系統只提醒、不阻止；請自己確認符合合約與法規。","班表目前只存在這次開啟的畫面，重新整理網頁會消失，所以定案後請先匯出或寫入行事曆。","再按一次「開始排班」會重新排，手動調整的內容不會保留。"]},
+
+{k:"cloud",ic:"☁️",n:"雲端與備份",sum:"備份、換裝置，以及把班表寫進 Google 行事曆。",
+ steps:[
+ ["💾 備份檔（不用登入）","按「⬇️ 下載備份檔」存下全部設定、服務單位與任務；換裝置時按「⬆️ 匯入備份檔」還原。"],
+ ["☁️ Google 雲端同步","用 Google 登入後，資料會存到你自己 Google 雲端硬碟的「應用程式專用資料夾」，設計者看不到。可勾選「修改後自動上傳」。"],
+ ["📅 寫入 Google 行事曆","先到「排班結果」排好（或定案）班表，再按「寫入本月班表」。系統會建立專屬行事曆「班好喬 occu.flow 班表」，重複寫入只更新本月，不動你其他行程。"],
+ ["登出與撤銷授權","隨時可以登出，也可到 Google 帳戶的「第三方存取權」移除授權。"]
+ ],
+ tips:["兩台裝置同時修改時，以最後上傳的為準。","行事曆權限在 Google 完成驗證前，可能出現「尚未驗證」提示。"]},
+
+{k:"log",ic:"🕒",n:"更新歷程",sum:"每個版本新增或調整了什麼。",
+ steps:[["查看版本","清單由新到舊排列，最上面是目前版本。更新後只要重新整理網頁（Ctrl＋Shift＋R 強制重新整理）就會看到新版。"]],
+ tips:["你的資料存在自己的瀏覽器，更新版本不會讓資料消失。"]},
+
+{k:"me",ic:"👩‍⚕️",n:"關於設計者",sum:"認識作者，以及著作權聲明與使用條款。",
+ steps:[["聯絡與意見回饋","可以從這頁用 Instagram、LINE 或 Email 聯絡設計者。"],["使用條款","點「著作權聲明與使用條款」的各個標題，會展開內文。"],["支持這個工具","如果這套工具幫你省下排班時間，歡迎請設計者喝杯奶茶。"]],
+ tips:[]}
+];
+
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function vid(u){u=String(u||"").trim();
+ if(!u)return'<div class="nov">🎬 教學影片製作中，請先參考下方圖文說明。</div>';
+ var m=/(?:youtu\.be\/|youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/|live\/))([\w-]{11})/.exec(u)||/^([\w-]{11})$/.exec(u);
+ if(m)return'<div class="vd"><iframe src="https://www.youtube-nocookie.com/embed/'+m[1]+'?rel=0" title="教學影片" allow="accelerometer; encrypted-media; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><p class="vl">影片無法播放？<a href="https://www.youtube.com/watch?v='+m[1]+'" target="_blank" rel="noopener">在 YouTube 開啟</a></p>';
+ if(/\.(mp4|webm)(\?|$)/i.test(u))return'<video controls playsinline preload="metadata" src="'+esc(u)+'"></video>';
+ return'<p><a href="'+esc(u)+'" target="_blank" rel="noopener">▶ 前往觀看教學影片</a></p>';
+}
+function cur(){var k=(location.hash||"").replace("#","");return PAGES.filter(function(p){return p.k===k})[0]||PAGES[0]}
+function draw(){var p=cur();document.title=p.n+"教學｜班好喬 occu.flow";
+ document.getElementById("nav").innerHTML=PAGES.map(function(x){return'<a href="#'+x.k+'" class="'+(x.k===p.k?"on":"")+'">'+x.ic+" "+esc(x.n)+'</a>'}).join("");
+ var h='<h1><span>'+p.ic+'</span>'+esc(p.n)+'教學</h1><p class="sum">'+esc(p.sum)+'</p>';
+ h+='<section class="cd"><h2>🎬 教學影片</h2>'+vid(VIDEOS[p.k])+'</section>';
+ h+='<section class="cd"><h2>📝 圖文說明</h2><ol class="st">'+p.steps.map(function(s,i){return'<li><b>'+esc(s[0])+'</b><p>'+esc(s[1])+'</p><img src="tutorial/'+p.k+'-'+(i+1)+'.png" alt="'+esc(p.n+'：'+s[0])+'" loading="lazy" onerror="this.remove()"></li>'}).join("")+'</ol></section>';
+ if(p.tips.length)h+='<section class="cd"><h2>💡 小提醒</h2><ul class="tp">'+p.tips.map(function(t){return'<li>'+esc(t)+'</li>'}).join("")+'</ul></section>';
+ document.getElementById("m").innerHTML=h;window.scrollTo(0,0)}
+window.addEventListener("hashchange",draw);draw();
+</script></body></html>

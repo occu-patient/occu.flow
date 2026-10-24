@@ -22,9 +22,18 @@ Copyright (c) 2026 occu.patient (Gwen). All rights reserved.
 本專案依「現況」提供，不附任何明示或默示之擔保。在法律允許範圍內，作者不就因使用
 或無法使用本專案所生之損失負責。
 
+【第三方元件】
+本工具執行時會由第三方載入 Google Fonts、SheetJS 等元件，並以 YouTube 提供教學影片。
+這些第三方內容各自適用其原有的授權條款與服務條款，不受本授權影響，也不因本授權而
+轉讓或授予任何權利。
+
+【條款與隱私】
+使用本工具另須遵守《使用條款》（terms.html）；資料處理方式請見《隱私權政策》（privacy.html）。
+
 合作、客製或商業授權洽詢：occu.patient@gmail.com
 
 ---------------------------------------------------------------------------------------
 Unauthorized copying, modification, redistribution, resale or reverse engineering of this
 software is prohibited without prior written permission from the copyright holder.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+Third-party components (e.g. Google Fonts, SheetJS) and YouTube-hosted videos remain subject to their own licenses and terms.
