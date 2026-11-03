@@ -5,26 +5,27 @@
 <style>body{font:16px/1.8 system-ui,-apple-system,"Noto Sans TC",sans-serif;max-width:720px;margin:0 auto;padding:24px 18px;color:#1f2430;background:#f6f6f3}h1{font-size:22px}h2{font-size:17px;margin-top:26px}a{color:#26324a}ul{padding-left:22px}code{background:#f1f0ec;padding:1px 6px;border-radius:6px;font-size:14px}footer{margin-top:32px;font-size:13px;color:#6b7080}</style></head>
 <body>
 <h1>班好喬 occu.flow 隱私權政策</h1>
-<p>最後更新：2026 年 10 月 25 日</p>
+<p>最後更新：2026 年 11 月 3 日</p>
 <p>「班好喬 occu.flow」（以下簡稱本工具）由 occu.patient (Gwen)（以下簡稱設計者）提供，用於勞工健康服務護理師的臨場服務排班。本政策說明本工具如何處理你的資料。</p>
 
 <h2>1. 我們蒐集與儲存什麼</h2>
-<p>你輸入的服務單位、地址、設定、本月任務與班表，<b>預設只存在你使用的瀏覽器</b>（localStorage），不會上傳到設計者的伺服器。瀏覽器內儲存的項目包括：</p>
-<ul><li>你的設定、服務單位與任務（<code>nurse_sched</code>）；</li>
+<p>你輸入的臨場公司+廠區、地址、設定、本月任務與班表，<b>預設只存在你使用的瀏覽器</b>（localStorage），不會上傳到設計者的伺服器。瀏覽器內儲存的項目包括：</p>
+<ul><li>你的設定、臨場公司+廠區、任務，以及「臨場工作台」的資料（<code>nurse_sched</code>）；</li>
+<li>「臨場工作台」的資料包括：臨場公司資料（公司名稱、統編、地址、聯絡窗口、合約與報告期限、健檢時間等）、醫師臨場班表、行政任務、每月例行事項與作業備忘；這些都是你自行輸入的內容；</li>
 <li>介面偏好，例如左側選單是否釘選、是否已按過「我了解」；</li>
 <li>若你使用 Google 功能：登入的 Google 電子郵件、「修改後自動上傳」開關、上次同步時間，以及（若你輸入）授權碼。<b>不會儲存你的 Google 登入憑證或密碼</b>；</li>
 <li>瀏覽人數的快取數字，以及「這個瀏覽器已計過」的標記。</li></ul>
 <p>排班結果與你在行事曆上的手動調整，只存在目前開啟的畫面（記憶體），重新整理網頁即消失，不會被儲存或上傳。Excel 匯入在你的瀏覽器內處理，檔案不會上傳。</p>
-<p>本工具只需要公司名稱與地址等排班資訊，<b>請勿輸入勞工的姓名、健康資料或其他可識別個人的敏感資料</b>。</p>
+<p>本工具只需要公司名稱與地址等排班資訊，<b>請勿輸入勞工的姓名、健康資料或其他可識別個人的敏感資料，也請勿把帳號密碼存進本工具</b>。</p>
 
 <h2>2. Google 雲端同步（由你自行選擇）</h2>
 <p>若你按下「使用 Google 登入」，本工具會要求以下權限：</p>
 <ul><li><code>openid</code>、<code>email</code>：辨識你登入的帳號（顯示與比對電子郵件）；</li>
-<li><code>drive.appdata</code>（Google 雲端硬碟「應用程式資料」）：把你的設定、服務單位與任務存成一個檔案（<code>occu_flow_data.json</code>），放在你自己雲端硬碟的「應用程式專用資料夾」，用於跨裝置同步。</li></ul>
+<li><code>drive.appdata</code>（Google 雲端硬碟「應用程式資料」）：把你的設定、臨場公司+廠區、任務與臨場工作台資料存成一個檔案（<code>occu_flow_data.json</code>），放在你自己雲端硬碟的「應用程式專用資料夾」，用於跨裝置同步。</li></ul>
 <p>該檔案由 Google 保管；設計者無法讀取該資料夾，也無法存取你的其他檔案。</p>
 
 <h2>3. Google 行事曆（由你自行選擇）</h2>
-<p>若你按下「寫入 Google 行事曆」，本工具會另外要求 <code>calendar.app.created</code> 權限（僅限建立與管理本工具自己建立的行事曆）。班表內容（服務單位名稱、地址、日期與時間）只會寫入你自己帳號中由本工具建立的行事曆「班好喬 occu.flow 班表」，不會更動你其他行事曆與行程，設計者無法讀取。你也可以使用「匯出 .ics」，不需要任何 Google 權限。</p>
+<p>若你按下「寫入 Google 行事曆」，本工具會另外要求 <code>calendar.app.created</code> 權限（僅限建立與管理本工具自己建立的行事曆）。班表內容（臨場公司+廠區名稱、地址、日期與時間）只會寫入你自己帳號中由本工具建立的行事曆「班好喬 occu.flow 班表」，不會更動你其他行事曆與行程，設計者無法讀取。你也可以使用「匯出 .ics」，不需要任何 Google 權限。</p>
 
 <h2>4. 方案驗證（若有提供進階方案）</h2>
 <p>目前所有功能免費開放，未蒐集授權資料。日後若啟用進階方案，驗證時你的 Google 電子郵件或授權碼會傳送到設計者管理的授權名單（Google 試算表），僅用於確認方案與到期日，不作其他用途，也不提供給第三方。</p>
@@ -37,7 +38,7 @@
 
 <h2>7. 第三方服務</h2>
 <ul><li>本工具會載入 Google Fonts、SheetJS（cdnjs）元件；使用 Google 功能時會載入 Google 登入元件。這些服務可能取得你的連線資訊（如 IP）。</li>
-<li>各頁「教學」會開啟新視窗（tutorial.html），其中的教學影片由 YouTube 提供；播放影片時，YouTube 可能取得你的連線資訊並依其政策處理。</li>
+
 <li>點擊地圖連結會開啟 Google 地圖，並將地址傳給 Google。</li></ul>
 
 <h2>8. 資料保存與如何刪除你的資料</h2>
