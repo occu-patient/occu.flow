@@ -1,5 +1,5 @@
 /* 班好喬 occu.flow — Service Worker（離線快取）。改版時請更新 VER。 */
-const VER="occu-flow-v1.1.0-7",CORE=["./","index.html","privacy.html","terms.html","manifest.webmanifest","vendor/xlsx.full.min.js","icons/icon-192.png","icons/icon-512.png","icons/apple-touch-icon.png"];
+const VER="occu-flow-v1.1.0-8",CORE=["./","index.html","privacy.html","terms.html","manifest.webmanifest","vendor/xlsx.full.min.js","icons/icon-192.png","icons/icon-512.png","icons/apple-touch-icon.png"];
 const FONT=/^https:\/\/fonts\.(googleapis|gstatic)\.com\//;
 self.addEventListener("install",e=>{e.waitUntil(caches.open(VER).then(c=>Promise.all(CORE.map(u=>c.add(u).catch(()=>{})))).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==VER).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
