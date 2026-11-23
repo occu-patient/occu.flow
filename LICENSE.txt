@@ -1,19 +1,24 @@
 Copyright (c) 2026 occu.patient (Gwen). All rights reserved.
 著作權所有 © 2026 occu.patient (Gwen)，保留一切權利。
 
-本專案「班好喬 occu.flow」之名稱、標誌、程式碼、排班規則與演算法、介面設計及說明文字，
-受中華民國著作權法及相關國際公約保護。
+本專案「班好喬 occu.flow」（含臨場工作台 occu.desk、臨場檢核表 occu.check、工作負荷評估）
+由 occu.patient (Gwen) 獨立設計與開發。其名稱、標誌、程式碼、排班規則與演算法、檢核表項目與版面、
+表單與 PDF 格式、介面設計及說明文字，受中華民國著作權法及相關國際公約保護。
+
+任何形式的引用、轉載、改編、教學或簡報使用、截圖公開發表，或以本專案的設計製作衍生作品，
+皆須事先取得作者書面同意，並註明出處「occu.patient (Gwen)／https://occupatient.org/」。
 
 【使用授權】
-任何人可透過作者公布的官方網址，免費將本工具用於個人或所屬機構的工作排班。
+任何人可透過作者公布的官方網址，免費將本工具用於個人或所屬機構的排班與臨場服務管理。
 此為非專屬、不可轉讓的使用授權，不包含原始碼的任何權利。
 
 【未經作者事前書面同意，禁止下列行為】
 1. 下載、複製本專案後重新發布，或架設於其他網站、散布副本；
 2. 修改、改作、拆解、還原本專案的程式碼、演算法與規則；
 3. 轉售、出租、收費提供，或包裝成自己的產品或服務；
-4. 移除或修改著作權標示與浮水印；
-5. 以自動化程式大量存取、擷取內容。
+4. 移除或修改著作權標示、網址與浮水印；
+5. 引用、轉載、改編本專案的設計、檢核表項目、表單或 PDF 格式（含部分引用、翻拍、重新排版）；
+6. 以自動化程式大量存取、擷取內容。
 
 【免責聲明】
 本工具產生之內容僅供參考，不構成專業評估或決策依據。使用者因使用本工具所衍生之任何
@@ -23,7 +28,7 @@ Copyright (c) 2026 occu.patient (Gwen). All rights reserved.
 或無法使用本專案所生之損失負責。
 
 【第三方元件】
-本工具執行時會由第三方載入 Google Fonts、SheetJS 等元件，並以 YouTube 提供教學影片。
+本工具執行時會由第三方載入 Google Fonts、SheetJS 等元件。
 這些第三方內容各自適用其原有的授權條款與服務條款，不受本授權影響，也不因本授權而
 轉讓或授予任何權利。
 
@@ -36,4 +41,4 @@ Copyright (c) 2026 occu.patient (Gwen). All rights reserved.
 Unauthorized copying, modification, redistribution, resale or reverse engineering of this
 software is prohibited without prior written permission from the copyright holder.
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
-Third-party components (e.g. Google Fonts, SheetJS) and YouTube-hosted videos remain subject to their own licenses and terms.
+Third-party components (e.g. Google Fonts, SheetJS) remain subject to their own licenses and terms.
